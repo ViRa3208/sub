@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 15px;
+      color: #667eea;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    #startBtn {
+      background: #4CAF50;
+      color: white;
+    }
+    #stopBtn {
+      background: #f44336;
+      color: white;
+    }
+    #status {
+      margin-top: 15px;
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      background: #16213e;
+    }
+  </style>
+</head>
+<body>
+  <h3>🎤 Захват звука</h3>
+  <button id="startBtn">🎙 Начать</button>
+  <button id="stopBtn">⏹ Остановить</button>
+  <div id="status">⚪ Не активно</div>
+  <script src="popup.js"></script>
+</body>
+</html>

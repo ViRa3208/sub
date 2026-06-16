@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Audio Capture",
+  "version": "1.0",
+  "description": "Захват звука с вкладки для распознавания речи",
+  "permissions": ["tabCapture", "offscreen", "scripting", "activeTab"],
+  "host_permissions": ["http://localhost:8017/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Захват звука"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
